@@ -22,6 +22,15 @@ img {
     -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
     transform: translateZ(0);
 }
+
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /* ------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------- */
@@ -233,4 +242,46 @@ header {
 .showcase-photo img:hover{
     transform: scale(1.06);
     opacity: 1;
+}
+
+/* ------------------------------------------- */
+/* SECTION 3 */
+/* ------------------------------------------- */
+.section-3{
+    background: #f4f4f4;
+}
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 50px;
+}
+
+.section-3-image{
+    width: 100%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+.works-step  div {
+    color: #3498db;
+    border: 2px solid #3498db;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;   
+    padding: 7px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
 }
