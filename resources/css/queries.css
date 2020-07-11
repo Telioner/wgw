@@ -145,5 +145,15 @@
     h1 {
         font-size: 170%;
     }
-    
+    footer {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .footer-nav li{
+    margin: 0 2;
+    }
+    .footer-nav li:last-child{
+    margin: 0 2;
+}
+
 }
