@@ -155,5 +155,36 @@
     .footer-nav li:last-child{
     margin: 0 2;
 }
+}
 
+@media only screen and (max-height: 440px) {
+    .logo {
+    height:50px;
+    width: auto;
+    margin-top: 10px;
+    }
+    .main-nav {
+    margin-top: 27px;
+}
+}
+
+@media only screen and (max-height: 440px) {
+    .logo {
+    height:50px;
+    width: auto;
+    margin-top: 10px;
+    }
+    .main-nav {
+    margin-top: 27px;
+    }
+    
+    @media only screen and (max-height: 260px) {
+    .logo {
+    height:25px;
+    width: auto;
+    margin-top: 5px;
+    }
+    .main-nav {
+    margin-top: 14px;
+        }
 }
