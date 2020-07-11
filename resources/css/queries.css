@@ -86,9 +86,45 @@
         margin: 0 0 4% 0;
     }
 
-    .main-nav {
-        display: none
+    .mobile-nav-icon {
+        display: inline-block;
     }
+
+    .main-nav {
+        display: none;
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding 10px 0;
+        font-size: 100%
+    }
+
+
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+    .sticky .mobile-nav-icon{
+        margin-top: 10px;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #4a4a4a;
+    }
+
 
     h1 {
         font-size: 180%;
@@ -126,7 +162,7 @@
 
     .footer-nav,
     .social-links {
-        float:none;
+        float: none;
         text-align: center;
     }
 
@@ -139,52 +175,59 @@
 
 /* Small phones (0 to 480px) */
 @media only screen and (max-width: 480px) {
-    section{
+    section {
         padding: 25px 0;
     }
+
     h1 {
         font-size: 170%;
     }
+
     footer {
         padding-left: 2%;
         padding-right: 2%;
     }
-    .footer-nav li{
-    margin: 0 2;
+
+    .footer-nav li {
+        margin: 0 2;
     }
-    .footer-nav li:last-child{
-    margin: 0 2;
-}
+
+    .footer-nav li:last-child {
+        margin: 0 2;
+    }
 }
 
 @media only screen and (max-height: 440px) {
     .logo {
-    height:50px;
-    width: auto;
-    margin-top: 10px;
+        height: 50px;
+        width: auto;
+        margin-top: 10px;
     }
+
     .main-nav {
-    margin-top: 27px;
-}
+        margin-top: 27px;
+    }
 }
 
 @media only screen and (max-height: 440px) {
     .logo {
-    height:50px;
-    width: auto;
-    margin-top: 10px;
+        height: 50px;
+        width: auto;
+        margin-top: 10px;
     }
+
     .main-nav {
-    margin-top: 27px;
+        margin-top: 27px;
     }
-    
+
     @media only screen and (max-height: 260px) {
-    .logo {
-    height:25px;
-    width: auto;
-    margin-top: 5px;
-    }
-    .main-nav {
-    margin-top: 14px;
+        .logo {
+            height: 25px;
+            width: auto;
+            margin-top: 5px;
         }
-}
+
+        .main-nav {
+            margin-top: 14px;
+        }
+    }

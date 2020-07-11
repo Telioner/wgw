@@ -8,10 +8,11 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
-
+    
     <title>Warsaw Gun Works</title>
 </head>
 
@@ -20,28 +21,30 @@
         <nav>
             <div class="row">
                 <img src="resources/img/logo-white.svg" alt="Warsaw Gun Works Logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Modernizacje broni</a></li>
-                    <li><a href="#">Przedstawicielstwo</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Placeholder</a></li>
+                <img src="resources/img/logo-black.svg" alt="Warsaw Gun Works Logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a class="js--scroll-3" href="#section-3">Modernizacje broni</a></li>
+                    <li><a class="js--scroll-4" href="#section-4">Przedstawicielstwo</a></li>
+                    <li><a class="js--scroll-5" href="#section-5">O nas</a></li>
+                    <li><a class="js--scroll-6" href="#section-6">Placeholder</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="header-text-box">
             <h1>Tutaj wymyślcie jakiś slogan,<br>albo Wasz "catchphrase".</h1>
-            <a class="btn btn-full" href="#">Button 1</a>
-            <a class="btn btn-ghost" href="#">Button 2</a>
+            <a class="btn btn-full js--scroll-1" href="#">Button 1</a>
+            <a class="btn btn-ghost js--scroll-2" href="#">Button 2</a>
         </div>
     </header>
-    <section class="section-1">
+    <section class="section-1 js--section-1">
         <div class="row">
             <h2>Sekcja 1 do wyboru</h2>
-            <p class="paragraph-section-1">
+            <p class="paragraph-section-1 js--wp-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sem non porta scelerisque. Nulla rhoncus est ac nisi ultricies, sodales consectetur orci viverra. Quisque lectus lectus, mollis eu sem non, vulputate elementum urna. Nunc ullamcorper justo non elit imperdiet convallis. Mauris luctus sem sit amet purus congue, id fermentum nibh tincidunt.
             </p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-body icon-big"></i>
                 <h3>Lorem ipsum dolor</h3>
@@ -137,13 +140,13 @@
             </li>
         </ul>
     </section>
-    <section class="section-3">
+    <section class="section-3" id="section-3">
         <div class="row">
             <h2>Sekcja 3 do wyboru</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/aktransparent.png" alt="Model AK-47" class="section-3-image">
+                <img src="resources/img/aktransparent.png" alt="Model AK-47" class="section-3-image js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -161,11 +164,11 @@
             </div>
         </div>
     </section>
-    <section class="section-4">
+    <section class="section-4" id="section-4">
         <div class="row">
             <h2>Sekcja 4 do wyboru</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <civ class="col span-1-of-4 box">
                 <img src="resources/img/showcase1.jpg" alt="karabiny">
                 <h3>dolor sit amet</h3>
@@ -232,7 +235,7 @@
             </civ>
         </div>
     </section>
-    <section class="section-5">
+    <section class="section-5" id="section-5">
         <div class="row">
             <h2>Sekcja 5 do wyboru</h2>
         </div>
@@ -260,13 +263,13 @@
             </div>
         </div>
     </section>
-    <section class="section-6">
+    <section class="section-6" id="section-6">
         <div class="row">
             <h2>Sekcja 6 do wyboru</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="section-6-box">
+                <div class="section-6-box js--wp-4">
                     <div>
                         <h3>Lorem</h3>
                         <p class="section-6-number">Bububub</p>
@@ -384,4 +387,11 @@
             <p>Copyright &copy 2020 Warsaw Gun Works. Wszystkie prawa zastrzeżone.</p>
         </div>
     </footer>
-</body></html>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="vendors/js/respond.min.js"></script>
+<script type="text/javascript" src="vendors/js/html5shiv.js"></script>
+<script type="text/javascript" src="vendors/js/selectivizr.min.js"></script>
+<script type="text/javascript" src="vendors/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="resources/js/script.js"></script>
+</body>
+</html>

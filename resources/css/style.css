@@ -215,6 +215,15 @@ header {
     margin-top: 20px;
 }
 
+.logo-black{
+    height:50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    display: none;
+}
+
+/* main navigation */
 .main-nav {
     float: right;
     list-style: none;
@@ -242,6 +251,41 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #3498db;
 }
+/* mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+/* sticky navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.99);
+    box-shadow: 0 2px 2px #e6e6e6;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #4a4a4a;
+}
+
+.sticky .logo {display: none}
+.sticky .logo-black {display: block;}
 /* ------------------------------------------- */
 /* SECTION 1 */
 /* ------------------------------------------- */
@@ -502,5 +546,18 @@ footer p {
     margin-top: 20px;
 }
 
+/* ------------------------------------------- */
+/* animations*/
+/* ------------------------------------------- */
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+}
 
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated{
+    opacity: 1;
+}
