@@ -388,6 +388,11 @@ cite img {
     background: #f4f4f4;
 }
 
+.btn-section-6:link,
+.btn-section-6:visited{
+    margin-right: 0;
+}
+
 .section-6-box {
     background-color: #fff;
     border-radius: 5px;
