@@ -108,7 +108,7 @@ h2:after {
     font-size: 350%;
     display: block;
     color: #3498db;
-    margin: auto;
+    text-align: center;
     margin-bottom: 10px;
 }
 
