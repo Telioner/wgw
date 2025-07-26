@@ -156,8 +156,8 @@ a:active{
 
 .btn-full:link,
 .btn-full:visited {
-    border: 1px solid #3498db;
-    background-color: #3498db;
+    border: 1px solid #3d3d3d;
+    background-color: #42494e;
     color: #fff;
     margin-right: 15px;
 
@@ -166,25 +166,25 @@ a:active{
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #3498db;
-    color: #3498db;
+    color: #b7d3e6;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #1f74ac;
+    background-color: #a4b6c2;
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #1f74ac;;
-    background-color: #1f74ac;
+    border: 1px solid #a9b8c2;;
+    background-color: #9faeb9;
     color: #fff;
 
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #1f74ac;;
+    border: 1px solid #b4cad9;;
     color: #fff;
 }
 
