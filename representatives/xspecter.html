@@ -1,180 +1,116 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
 
-    <title>XSPECTER — Warsaw Gun Works</title>
+  <title>XSPECTER — Warsaw Gun Works</title>
+
+  <style>
+    .page{min-height:100vh;display:flex;flex-direction:column}
+    .page-main{flex:1 0 auto;padding-top:90px}
+
+    nav.sticky-init{position:fixed;top:0;left:0;right:0;z-index:9999;background-color:rgba(255,255,255,.99);box-shadow:0 2px 2px #e6e6e6}
+    nav.sticky-init .main-nav{margin-top:18px;display:block !important;float:right}
+    nav.sticky-init .main-nav li{display:inline-block !important;margin-left:20px}
+    nav.sticky-init .main-nav li a{padding:16px 0;color:#4a4a4a}
+    nav.sticky-init .logo{display:none}
+    nav.sticky-init .logo-black{display:block}
+    nav.sticky-init .mobile-nav-icon{display:none !important}
+    nav.sticky-init .mobile-nav-icon i{color:#4a4a4a}
+    @media (max-width:767px){nav.sticky-init .main-nav li a{padding:12px 0 !important}}
+
+    .rep-hero{padding:36px 0 10px;text-align:center}
+    .rep-hero h2{margin-bottom:8px}
+    .rep-hero p{opacity:.8;margin:0}
+    .rep-text{max-width:900px;margin:24px auto 0}
+    .rep-text p{line-height:1.75;margin-bottom:18px}
+    .rep-cta{margin-top:3%}
+
+    .rep-gallery .showcase{list-style:none;margin:0;padding:0;display:grid;row-gap:18px;justify-items:center}
+    .rep-gallery .showcase li{width:100%;float:none;display:block}
+    .rep-gallery .showcase-photo{display:block;margin:0 auto;width:100%;max-width:var(--media-max,100%);border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+    .rep-gallery .showcase-photo img{display:block;width:100%;height:auto;object-fit:contain;transform:none !important;opacity:1 !important;transition:none !important}
+    .rep-gallery .showcase-photo img:hover{transform:none !important;opacity:1 !important}
+
+    .media-full{--media-max:100%}
+    .media-100{--media-max:min(1140px,100%)}
+    .media-90{--media-max:min(1026px,100%)}
+    .media-85{--media-max:min(969px,100%)}
+    .media-80{--media-max:min(912px,100%)}
+    .media-75{--media-max:min(855px,100%)}
+    .media-70{--media-max:min(798px,100%)}
+    .media-66{--media-max:min(752px,100%)}
+    .media-60{--media-max:min(684px,100%)}
+    .media-55{--media-max:min(627px,100%)}
+    .media-50{--media-max:min(570px,100%)}
+    .media-45{--media-max:min(513px,100%)}
+    .media-40{--media-max:min(456px,100%)}
+    .media-35{--media-max:min(399px,100%)}
+    .media-33{--media-max:min(376px,100%)}
+    .media-30{--media-max:min(342px,100%)}
+    .media-25{--media-max:min(285px,100%)}
+    .media-20{--media-max:min(228px,100%)}
+    .media-15{--media-max:min(171px,100%)}
+    @media (max-width:1140px){.rep-gallery .showcase-photo{max-width:min(var(--media-max),100%)}}
+  </style>
 </head>
 <body>
-    <header style="background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../resources/img/rep-xspecter-hero.jpg); background-size: cover; background-position: center; height: 60vh; background-attachment: scroll;">
-        <nav>
-            <div class="row">
-                <img src="../resources/img/logo-white.svg" alt="Warsaw Gun Works Logo" class="logo">
-                <img src="../resources/img/logo-black.svg" alt="Warsaw Gun Works Logo" class="logo-black">
-                <ul class="main-nav js--main-nav">
-                    <li><a href="../index.html">Powrót na stronę główną</a></li>
-                </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-            </div>
-        </nav>
-        <div class="header-text-box">
-            <h1>XSPECTER</h1>
-            <p style="color:#fff; max-width: 52ch; margin: 0 auto 20px;">Zaawansowane rozwiązania obserwacyjne i wsparcia działań taktycznych dla użytkowników profesjonalnych.</p>
-            <a class="btn btn-full" href="../resources/docs/xspecter-katalog.pdf" download>Pobierz katalog PDF</a>
-        </div>
-    </header>
-
-    <section class="section-1 js--section-1">
-        <div class="row">
-            <h2>O marce</h2>
-            <p class="paragraph-section-1 js--wp-1">
-                XSPECTER projektuje i dostarcza sprzęt optoelektroniczny oraz akcesoria przeznaczone do pracy w najtrudniejszych warunkach. Rozwiązania tworzone są z myślą o potrzebach wojska, policji oraz służb specjalnych, a także najbardziej wymagających odbiorców cywilnych.
-            </p>
-        </div>
-        <div class="row js--wp-1">
-            <div class="col span-1-of-2 box">
-                <h3>Kluczowe cechy</h3>
-                <ul style="list-style:none;">
-                    <li><i class="ion-checkmark-round icon-small"></i>Wysoka odporność środowiskowa i mechaniczna</li>
-                    <li><i class="ion-checkmark-round icon-small"></i>Modułowa konstrukcja i szybka integracja</li>
-                    <li><i class="ion-checkmark-round icon-small"></i>Kompatybilność z popularnymi platformami</li>
-                    <li><i class="ion-checkmark-round icon-small"></i>Wsparcie serwisowe i szkoleniowe</li>
-                </ul>
-                <p style="margin-top:12px;">
-                    Skontaktuj się z nami w sprawie prezentacji oraz testów sprzętu w Twojej jednostce.
-                </p>
-                <p style="margin-top:14px;">
-                    <i class="ion-email icon-small"></i><a href="mailto:contact@warsawgunworks.pl" style="border:0;">contact@warsawgunworks.pl</a><br>
-                    <i class="ion-ios-telephone icon-small"></i><a href="tel:+48111222333" style="border:0;">+48 111 222 333</a>
-                </p>
-            </div>
-            <div class="col span-1-of-2 box">
-                <img src="../resources/img/xspecter-cover.jpg" alt="XSPECTER – produkt w użyciu">
-            </div>
-        </div>
-    </section>
-
-    <section class="section-6" id="materiały">
-        <div class="row">
-            <h2>Materiały do pobrania</h2>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-3">
-                <div class="section-6-box js--wp-4">
-                    <div>
-                        <h3>Katalog</h3>
-                        <p class="section-6-number">PDF</p>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><i class="ion-checkmark-round icon-small"></i>Pełna oferta</li>
-                            <li><i class="ion-checkmark-round icon-small"></i>Dane techniczne</li>
-                            <li><i class="ion-checkmark-round icon-small"></i>Akcesoria i integracje</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="../resources/docs/xspecter-katalog.pdf" class="btn btn-full btn-section-6" download>Pobierz</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
-                <div class="section-6-box">
-                    <div>
-                        <h3>Karta produktu</h3>
-                        <p class="section-6-number">PDF</p>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><i class="ion-checkmark-round icon-small"></i>Parametry</li>
-                            <li><i class="ion-checkmark-round icon-small"></i>Zastosowanie</li>
-                            <li><i class="ion-checkmark-round icon-small"></i>Warianty</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="../resources/docs/xspecter-karta-produktu.pdf" class="btn btn-ghost" download>Pobierz</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
-                <div class="section-6-box">
-                    <div>
-                        <h3>Instrukcja</h3>
-                        <p class="section-6-number">PDF</p>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><i class="ion-checkmark-round icon-small"></i>Bezpieczeństwo</li>
-                            <li><i class="ion-checkmark-round icon-small"></i>Obsługa</li>
-                            <li><i class="ion-checkmark-round icon-small"></i>Konserwacja</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="../resources/docs/xspecter-instrukcja.pdf" class="btn btn-ghost" download>Pobierz</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-2" id="galeria">
-        <div class="row">
-            <h2>Galeria</h2>
-        </div>
-
-        <ul class="showcase vertical clearfix">
-            <li>
-                <figure class="showcase-photo">
-                    <a href="../resources/img/xspecter-1.jpg" target="_blank">
-                        <img src="../resources/img/xspecter-1.jpg" alt="XSPECTER – zdjęcie 1">
-                    </a>
-                </figure>
-            </li>
-            <li>
-                <figure class="showcase-photo">
-                    <a href="../resources/img/xspecter-2.jpg" target="_blank">
-                        <img src="../resources/img/xspecter-2.jpg" alt="XSPECTER – zdjęcie 2">
-                    </a>
-                </figure>
-            </li>
+  <div class="page">
+    <nav class="sticky-init">
+      <div class="row">
+        <img src="../resources/img/logo-white.svg" alt="Warsaw Gun Works Logo" class="logo">
+        <img src="../resources/img/logo-black.svg" alt="Warsaw Gun Works Logo" class="logo-black">
+        <ul class="main-nav js--main-nav">
+          <li><a href="../index.html#section-2">Powrót</a></li>
         </ul>
+      </div>
+    </nav>
 
-        <ul class="showcase vertical clearfix">
-            <li>
-                <figure class="showcase-photo">
-                    <a href="../resources/img/xspecter-3.jpg" target="_blank">
-                        <img src="../resources/img/xspecter-3.jpg" alt="XSPECTER – zdjęcie 3">
-                    </a>
-                </figure>
-            </li>
-            <li>
-                <figure class="showcase-photo">
-                    <a href="../resources/img/xspecter-4.jpg" target="_blank">
-                        <img src="../resources/img/xspecter-4.jpg" alt="XSPECTER – zdjęcie 4">
-                    </a>
-                </figure>
-            </li>
+    <main class="page-main">
+      <section class="rep-hero">
+        <div class="row">
+          <h2>XSPECTER</h2>
+          <a href="https://www.xspecter.de/" target="_blank">https://www.xspecter.de/</a>
+        </div>
+        <div class="rep-cta">
+          <a class="btn btn-full" href="../resources/downloads/tcrow-xr-II-guide.pdf" download>Pobierz instrukcję TCROW XR-II</a>
+        </div>
+      </section>
+
+      <section class="rep-gallery">
+        <ul class="showcase">
+          <li class="media-full">
+            <figure class="showcase-photo">
+              <img src="../resources/img/przedstawiciel-xspecter.png" alt="XSPECTER — zdjęcie 1">
+            </figure>
+          </li>
+          <li class="media-full">
+            <figure class="showcase-photo">
+              <img src="../resources/img/xspecter-2.png" alt="XSPECTER — zdjęcie 2">
+            </figure>
+          </li>
         </ul>
-    </section>
+      </section>
+    </main>
 
     <footer>
-        <div class="row">
-            <p>© Copyright 2025. Wszelkie prawa zastrzeżone Warsaw Gun Works</p>
-        </div>
+      <div class="row">
+        <p>© Copyright 2025. Wszelkie prawa zastrzeżone Warsaw Gun Works</p>
+      </div>
     </footer>
+  </div>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="../vendors/js/respond.min.js"></script>
-    <script type="text/javascript" src="../vendors/js/html5shiv.js"></script>
-    <script type="text/javascript" src="../vendors/js/selectivizr.min.js"></script>
-    <script type="text/javascript" src="../vendors/js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="../resources/js/script.js"></script>
+  <script>
+    (function(){var nav=document.querySelector('nav.sticky-init');var main=document.querySelector('.page-main');function setOffset(){if(nav&&main){main.style.paddingTop=nav.offsetHeight+'px';}}window.addEventListener('load',setOffset);window.addEventListener('resize',setOffset);})();
+  </script>
 </body>
 </html>
