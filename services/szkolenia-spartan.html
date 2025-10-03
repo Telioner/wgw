@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <title>Szkolenia – Spartan | Warsaw Gun Works</title>
+
+  <style>
+    .page{min-height:100vh;display:flex;flex-direction:column}
+    .page-main{flex:1 0 auto;padding-top:90px}
+    nav.sticky-init{position:fixed;top:0;left:0;right:0;z-index:9999;background-color:rgba(255,255,255,.99);box-shadow:0 2px 2px #e6e6e6}
+    nav.sticky-init .main-nav{margin-top:18px;display:block !important;float:right}
+    nav.sticky-init .main-nav li{display:inline-block !important;margin-left:20px}
+    nav.sticky-init .main-nav li a{padding:16px 0;color:#4a4a4a}
+    nav.sticky-init .logo{display:none}
+    nav.sticky-init .logo-black{display:block}
+    nav.sticky-init .mobile-nav-icon{display:none !important}
+    @media (max-width:767px){nav.sticky-init .main-nav li a{padding:12px 0 !important}}
+
+    .rep-hero{padding:36px 0 10px;text-align:center}
+    .rep-hero h2{margin-bottom:4px}
+    .rep-sub{margin:0 auto 6px;opacity:.85;font-size:clamp(16px,1.6vw,18px)}
+
+    .rep-about{padding:28px 0 8px}
+    .rep-card{--radius:16px;--shadow:0 6px 24px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.06);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);max-width:1140px;margin:0 auto;padding:clamp(18px,2.5vw,28px);overflow:hidden}
+    .rep-card-grid{display:grid;grid-template-columns:1fr;gap:18px}
+    .rep-body{color:#374151;line-height:1.8;font-size:clamp(15px,1.5vw,17px);text-align:left}
+    .rep-body h4{margin:12px 0 6px}
+    .rep-body ul{margin:6px 0 0 0;padding:0;list-style:none}
+    .rep-body li{margin:6px 0}
+    .rep-cta{margin-top:16px}
+    @media (min-width:900px){.rep-card-grid{grid-template-columns:1fr;gap:24px}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="sticky-init">
+      <div class="row">
+        <img src="../resources/img/logo-white.svg" alt="Warsaw Gun Works Logo" class="logo">
+        <img src="../resources/img/logo-black.svg" alt="Warsaw Gun Works Logo" class="logo-black">
+        <ul class="main-nav js--main-nav">
+          <li><a href="../index.html#section-2">Przedstawicielstwo</a></li>
+          <li><a href="../services/demo-center.html">Demo Center</a></li>
+          <li><a href="../services/szkolenia-spartan.html">Szkolenia</a></li>
+          <li><a href="../index.html#section-3">Modernizacje broni</a></li>
+          <li><a href="../index.html#section-5">O nas</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <section class="rep-hero">
+        <div class="row">
+          <h2>SZKOLENIA</h2>
+          <p class="rep-sub">Wykorzystaj pełen potencjał sprzętu Spartan</p>
+        </div>
+      </section>
+
+      <section class="rep-about">
+        <div class="rep-card">
+          <div class="rep-card-grid">
+            <div class="rep-body">
+              <p>Sprzęt Spartan to dopiero początek.<br>
+              Na szkoleniu pokażemy Ci, jak w pełni wykorzystać jego możliwości – w terenie i na
+              strzelnicy.</p>
+
+              <h4>Dlaczego warto?</h4>
+              <ul>
+                <li>Poznasz wszystkie funkcje i triki sprzętu.</li>
+                <li>Unikniesz błędów w obsłudze i ustawieniu.</li>
+                <li>Ćwiczenia praktyczne w realnych warunkach.</li>
+                <li>Wsparcie ekspertów Spartan – twórców i użytkowników naszych produktów.</li>
+              </ul>
+
+              <h4>Format szkoleń</h4>
+              <ul>
+                <li>Indywidualne – dopasowane do Twojego stylu polowania czy strzelania.</li>
+                <li>Grupowe – dla kół łowieckich, klubów i drużyn sportowych.</li>
+                <li>Wyjazdowe – możliwość organizacji szkolenia w Twojej lokalizacji.</li>
+              </ul>
+
+              <p>Dołącz do grona profesjonalnych użytkowników Spartan<br>
+              „Kupując sprzęt premium, zasługujesz na premium doświadczenie.”</p>
+
+              <div class="rep-cta">
+                <a class="btn btn-full" href="mailto:wgw@warsawgunworks.pl?subject=Zapis%20na%20szkolenie%20Spartan">Zapisz się na szkolenie</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="row">
+        <p>© Copyright 2025. Wszelkie prawa zastrzeżone Warsaw Gun Works</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){var nav=document.querySelector('nav.sticky-init');var main=document.querySelector('.page-main');function setOffset(){if(nav&&main){main.style.paddingTop=nav.offsetHeight+'px';}}window.addEventListener('load',setOffset);window.addEventListener('resize',setOffset);})();
+  </script>
+</body>
+</html>

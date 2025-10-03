@@ -2,7 +2,6 @@
 <html lang="pl">
 
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
@@ -15,6 +14,64 @@
         rel="stylesheet">
 
     <title>Warsaw Gun Works</title>
+
+    <style>
+        .section-offer {
+            padding: 56px 0;
+            background: #f9fafb;
+        }
+
+        .section-offer .row h2 {
+            margin-bottom: 18px;
+        }
+
+        .offer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .offer-card {
+            flex: 1 1 340px;
+            max-width: 360px;
+            min-width: 300px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .offer-card h3 {
+            margin: 0 0 10px;
+            font-weight: 400;
+        }
+
+        .offer-card p {
+            margin: 0 0 18px;
+            line-height: 1.65;
+            color: #374151;
+        }
+
+        .offer-card .btn {
+            align-self: flex-start;
+            margin-top: auto;
+        }
+
+        @media (max-width: 480px) {
+            .section-offer {
+                padding: 40px 0;
+            }
+
+            .offer-card {
+                min-width: 260px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -33,6 +90,8 @@
                             <li><a href="representatives/spartan.html">Spartan</a></li>
                         </ul>
                     </li>
+                    <li><a href="services/demo-center.html">Demo Center</a></li>
+                    <li><a href="services/szkolenia-spartan.html">Szkolenia</a></li>
                     <li><a class="js--scroll-3" href="#section-3">Modernizacje broni</a></li>
                     <li><a class="js--scroll-5" href="#section-5">O nas</a></li>
                 </ul>
@@ -88,6 +147,37 @@
         </ul>
     </section>
 
+    <section class="section-offer" id="section-offer">
+        <div class="row">
+            <h2>Nasza oferta</h2>
+        </div>
+        <div class="offer-grid">
+            <article class="offer-card">
+                <h3>DEMO CENTER</h3>
+                <p>Sprawdź sprzęt na żywo w realistycznych scenariuszach operacyjnych. Zobacz, jak technologie czołowych
+                    marek wspierają operatorów w działaniu, gdzie liczy się niezawodność i precyzja. Przekonaj się sam,
+                    że prawdziwą różnicę poczujesz dopiero w praktyce.</p>
+                <a href="services/demo-center.html" class="btn btn-full">Umów wizytę</a>
+            </article>
+            <article class="offer-card">
+                <h3>SZKOLENIA</h3>
+                <p>Zdobądź praktyczne umiejętności obsługi sprzętu taktycznego od ekspertów z doświadczeniem w realnych
+                    działaniach. Nasze szkolenia łączą teorię z intensywnymi ćwiczeniami, aby maksymalnie wykorzystać
+                    potencjał wyposażenia. Wybierz program indywidualny, grupowy lub wyjazdowy – dopasowany do Twoich
+                    potrzeb.</p>
+                <a href="services/szkolenia-spartan.html" class="btn btn-full">Zapisz się</a>
+            </article>
+            <article class="offer-card">
+                <h3>B2B – Współpraca</h3>
+                <p>Oferujemy dostęp do szerokiego portfolio marek premium w obszarze wsparcia operacyjnego i
+                    taktycznego. Współpracujemy ze sklepami, dystrybutorami oraz instytucjami, które stawiają na
+                    najwyższą jakość sprzętu. Skontaktuj się z nami, aby poznać warunki partnerstwa i wspólnie budować
+                    przewagę na rynku.</p>
+                <a href="#section-5" class="btn btn-full">Zapytaj o ofertę</a>
+            </article>
+        </div>
+    </section>
+
     <section class="section-3" id="section-3">
         <div class="row">
             <h2>Modernizacje broni</h2>
@@ -117,6 +207,7 @@
             </div>
         </div>
     </section>
+
     <section class="section-7">
         <ul class="showcase wide-2 clearfix">
             <li>
@@ -167,6 +258,7 @@
             </li>
         </ul>
     </section>
+
     <section class="section-5" id="section-5">
         <div class="row about-wrap js--wp-3">
             <div class="about-media">
@@ -174,10 +266,15 @@
             </div>
             <div class="about-card">
                 <p class="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sem non porta
-                        scelerisqueLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sem non porta
-                        scelerisqueLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sem non porta
-                        scelerisque
+                    <strong>Współpraca B2B</strong><br>
+                    Łączymy najlepsze marki dla profesjonalistów.<br>
+                    Jesteśmy przedstawicielem wielu producentów sprzętu taktycznego i wsparcia
+                    operacyjnego. Dostarczamy rozwiązania, które sprawdzają się w najtrudniejszych
+                    warunkach.<br><br>
+                    <strong>Dlaczego warto?</strong><br>
+                    • Dostęp do szerokiego portfolio marek premium.<br>
+                    • Rozwiązania dopasowane do potrzeb instytucji i organizacji.<br>
+                    • Wsparcie techniczne, logistyczne i szkoleniowe.
                 </p>
 
                 <ul class="about-contact">
@@ -190,7 +287,6 @@
                     </li>
                 </ul>
 
-
                 <ul class="about-meta">
                     <li><span>KRS:</span> 0000732307</li>
                     <li><span>NIP:</span> 712-33-70-784</li>
@@ -200,7 +296,7 @@
                 </ul>
 
                 <div class="btn-row">
-                    <a href="resources/downloads/koncesja.pdf" class="btn btn-full" download>Koncesja</a>
+                    <a href="resources/downloads/koncesja.pdf" class="btn btn-ghost" download>Koncesja</a>
                     <a href="resources/downloads/ncage.pdf" class="btn btn-ghost" download>Kod NCAGE</a>
                     <a href="resources/downloads/certyfikaty.pdf" class="btn btn-ghost" download>Certyfikaty</a>
                 </div>

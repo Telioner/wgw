@@ -104,6 +104,124 @@
       margin-top: 3%
     }
 
+    .rep-about {
+      padding: 28px 0 8px;
+    }
+
+    .rep-card {
+      --radius: 16px;
+      --shadow: 0 6px 24px rgba(0, 0, 0, .08), 0 2px 8px rgba(0, 0, 0, .06);
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: clamp(18px, 2.5vw, 28px);
+      overflow: hidden;
+    }
+
+    .rep-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: clamp(14px, 2vw, 18px);
+    }
+
+    .rep-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      line-height: 1;
+      background: #f5f7fb;
+      color: #334155;
+      border: 1px solid #e6ecf5;
+      padding: 8px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .rep-badge i {
+      font-size: 18px;
+      line-height: 0;
+      opacity: .8;
+    }
+
+    .rep-card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .rep-card h3 {
+      font-weight: 400;
+      letter-spacing: .2px;
+      margin: 0 0 6px;
+      color: #111;
+      font-size: clamp(22px, 2.4vw, 26px);
+    }
+
+    .rep-lead {
+      margin: 0 0 12px;
+      color: #374151;
+      opacity: .9;
+      line-height: 1.6;
+      font-size: clamp(16px, 1.6vw, 18px);
+    }
+
+    .rep-body {
+      color: #374151;
+      line-height: 1.8;
+      font-size: clamp(15px, 1.5vw, 17px);
+    }
+
+    .rep-meta {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 14px;
+      background: #fbfcfe;
+      border: 1px solid #eef2f7;
+      border-radius: 12px;
+      height: fit-content;
+    }
+
+    .rep-meta .meta-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #1f2937;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .rep-meta .meta-row i {
+      font-size: 18px;
+      margin-top: 2px;
+      color: #4b5563;
+      opacity: .9;
+      width: 18px;
+      text-align: center;
+      flex: 0 0 18px;
+    }
+
+    .rep-meta a {
+      color: #0f62fe;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .rep-meta a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 900px) {
+      .rep-card-grid {
+        grid-template-columns: 3fr 1.5fr;
+        gap: 24px;
+      }
+    }
+
     .rep-gallery .showcase {
       list-style: none;
       margin: 0;
@@ -244,14 +362,62 @@
       <section class="rep-hero">
         <div class="row">
           <h2>Andres Industries</h2>
-          <a href="https://www.andres-industries.de/en" target="_blank">https://www.andres-industries.de/en</a>
         </div>
-        <div class="rep-cta">
-          <a class="btn btn-full" href="../resources/downloads/andres-catalog.pdf" download>Pobierz katalog</a>
-        </div>
-        <div class="rep-cta">
-          <a class="btn btn-full" href="../resources/downloads/TigIR-M20TM.pdf" download>Pobierz instrukcję
-            TigIR-M20TM</a>
+      </section>
+
+      <section class="rep-about" aria-labelledby="about-andres">
+        <div class="rep-card">
+          <div class="rep-card-grid">
+            <div>
+              <h3 id="about-andres">Andres Industries AG</h3>
+              <p class="rep-lead">
+                Od ponad dwóch dekad dostarczamy zaawansowane rozwiązania w dziedzinie ochrony i technologii
+                optoelektronicznych.
+              </p>
+              <div class="rep-body">
+                <p>
+                  Korzenie naszej firmy sięgają roku 1999, kiedy to dr Björn Andres stworzył pierwszą wstrząsoodporną
+                  obudowę, która zapoczątkowała dynamiczny rozwój przedsiębiorstwa.
+                </p>
+                <p>
+                  Dzięki intensywnej współpracy z siłami specjalnymi na całym świecie zapewniamy, że nasze produkty nie
+                  tylko
+                  spełniają najwyższe standardy, ale również są precyzyjnie dopasowane do specyficznych wymagań
+                  użytkowników.
+                  Ta partnerska relacja pozwala nam dostarczać technologie noktowizyjne i termowizyjne, które spełniają
+                  rygorystyczne specyfikacje oraz oczekiwania profesjonalistów.
+                </p>
+                <p>
+                  Od początków działalności w obszarze wstrząsoodpornych i wodoszczelnych obudów, aż po obecny silny
+                  rozwój
+                  systemów termowizyjnych i noktowizyjnych, naszą misją pozostaje niezawodność, innowacyjność i
+                  najwyższa jakość.
+                </p>
+                <div class="rep-cta">
+                  <a class="btn btn-full" href="../resources/downloads/andres-catalog.pdf" download>Pobierz katalog</a>
+                </div>
+                <div class="rep-cta">
+                  <a class="btn btn-full" href="../resources/downloads/TigIR-M20TM.pdf" download>Pobierz instrukcję
+                    TigIR-M20TM</a>
+                </div>
+              </div>
+            </div>
+
+            <aside class="rep-meta" aria-label="Informacje podstawowe">
+              <div class="meta-row">
+                <div><strong>Siedziba:&nbsp;</strong>Berlin, Niemcy</div>
+              </div>
+              <div class="meta-row">
+                <div><strong>Prezes:&nbsp;</strong>dr Björn Andres</div>
+              </div>
+              <div class="meta-row">
+                <i class="ion-ios-link" aria-hidden="true"></i>
+                <div><strong>Więcej informacji:&nbsp;</strong>
+                  <a href="https://www.andres-industries.de" target="_blank" rel="noopener">www.andres-industries.de</a>
+                </div>
+              </div>
+            </aside>
+          </div>
         </div>
       </section>
 
@@ -280,7 +446,13 @@
   </div>
 
   <script>
-    (function () { var nav = document.querySelector('nav.sticky-init'); var main = document.querySelector('.page-main'); function setOffset() { if (nav && main) { main.style.paddingTop = nav.offsetHeight + 'px'; } } window.addEventListener('load', setOffset); window.addEventListener('resize', setOffset); })();
+    (function () {
+      var nav = document.querySelector('nav.sticky-init');
+      var main = document.querySelector('.page-main');
+      function setOffset() { if (nav && main) { main.style.paddingTop = nav.offsetHeight + 'px'; } }
+      window.addEventListener('load', setOffset);
+      window.addEventListener('resize', setOffset);
+    })();
   </script>
 </body>
 
