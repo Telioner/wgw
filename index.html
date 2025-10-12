@@ -62,6 +62,34 @@
             margin-top: auto;
         }
 
+        .section-3 .mod-wrap {
+            max-width: 1140px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-3 .mod-image {
+            display: block;
+            width: 100%;
+            max-width: 820px;
+            margin: 0 auto 18px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .12);
+        }
+
+        .btn-large {
+            font-size: 18px;
+            padding: 16px 28px;
+            border-radius: 999px;
+        }
+
+        @media (min-width: 992px) {
+            .btn-large {
+                font-size: 20px;
+                padding: 18px 36px;
+            }
+        }
+
         @media (max-width: 480px) {
             .section-offer {
                 padding: 40px 0;
@@ -81,18 +109,10 @@
                 <img src="resources/img/logo-white.svg" alt="Warsaw Gun Works Logo" class="logo">
                 <img src="resources/img/logo-black.svg" alt="Warsaw Gun Works Logo" class="logo-black">
                 <ul class="main-nav js--main-nav">
-                    <li class="has-dropdown">
-                        <a href="#" class="nav-reps">Przedstawicielstwo <i class="ion-chevron-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="representatives/xspecter.html">XSPECTER</a></li>
-                            <li><a href="representatives/polaris-solutions.html">Polaris Solutions</a></li>
-                            <li><a href="representatives/andres-industries.html">Andres Industries</a></li>
-                            <li><a href="representatives/spartan.html">Spartan</a></li>
-                        </ul>
-                    </li>
+                    <li><a class="js--scroll-2" href="#section-2">Przedstawicielstwo</a></li>
                     <li><a href="services/demo-center.html">Demo Center</a></li>
                     <li><a href="services/szkolenia-spartan.html">Szkolenia</a></li>
-                    <li><a class="js--scroll-3" href="#section-3">Modernizacje broni</a></li>
+                    <li><a href="gallery/modernizacje.html">Modernizacje broni</a></li>
                     <li><a class="js--scroll-5" href="#section-5">O nas</a></li>
                 </ul>
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
@@ -105,6 +125,7 @@
             <a class="btn btn-full js--scroll-2" href="#section-2">Dowiedz się więcej</a>
         </div>
     </header>
+
     <section class="section-2" id="section-2">
         <div class="row">
             <h1></h1>
@@ -115,7 +136,7 @@
             <li class="rep-card">
                 <a href="representatives/xspecter.html">
                     <div class="rep-logo-wrap">
-                        <img src="resources/img/przedstawiciel-xspecter.png" alt="XSPECTER">
+                        <img src="resources/img/przedstawiciel-xspecter.webp" alt="XSPECTER">
                     </div>
                     <h3>XSPECTER</h3>
                 </a>
@@ -123,7 +144,7 @@
             <li class="rep-card">
                 <a href="representatives/polaris-solutions.html">
                     <div class="rep-logo-wrap">
-                        <img src="resources/img/przedstawiciel-polaris-solutions.png" alt="POLARIS SOLUTIONS">
+                        <img src="resources/img/przedstawiciel-polaris-solutions.webp" alt="POLARIS SOLUTIONS">
                     </div>
                     <h3>Polaris Solutions</h3>
                 </a>
@@ -131,7 +152,7 @@
             <li class="rep-card">
                 <a href="representatives/andres-industries.html">
                     <div class="rep-logo-wrap">
-                        <img src="resources/img/przedstawiciel-andres-industries.png" alt="ANDRES INDUSTRIES">
+                        <img src="resources/img/przedstawiciel-andres-industries.webp" alt="ANDRES INDUSTRIES">
                     </div>
                     <h3>Andres Industries AG</h3>
                 </a>
@@ -139,7 +160,7 @@
             <li class="rep-card">
                 <a href="representatives/spartan.html">
                     <div class="rep-logo-wrap">
-                        <img src="resources/img/przedstawiciel-spartan.png" alt="SPARTAN">
+                        <img src="resources/img/przedstawiciel-spartan.webp" alt="SPARTAN">
                     </div>
                     <h3>Spartan Precision Equipment</h3>
                 </a>
@@ -182,87 +203,16 @@
         <div class="row">
             <h2>Modernizacje broni</h2>
         </div>
-        <div class="row">
-            <div class="col span-1-of-2 steps-box">
-                <a href="resources/img/showcase9.jpg" target="_blank">
-                    <img src="resources/img/showcase9.jpg" alt="Modernizowana broń" class="section-3-image js--wp-2">
-                </a>
-            </div>
-            <div class="col span-1-of-2 steps-box">
-                <div class="works-step">
-                    <div>1</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sem non porta
-                        scelerisque.</p>
-                </div>
-                <div class="works-step">
-                    <div>2</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sem non porta
-                        scelerisque.</p>
-                </div>
-                <div class="works-step">
-                    <div>3</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia sem non porta
-                        scelerisque.</p>
-                </div>
-            </div>
+        <div class="row mod-wrap">
+            <img src="resources/img/mod1.webp" alt="Modernizowana broń" class="mod-image">
+            <a href="gallery/modernizacje.html" class="btn btn-full btn-large">Zobacz galerię</a>
         </div>
-    </section>
-
-    <section class="section-7">
-        <ul class="showcase wide-2 clearfix">
-            <li>
-                <figure class="showcase-photo">
-                    <a href="resources/img/showcase1.jpg" target="_blank">
-                        <img src="resources/img/showcase1.jpg" alt="obraz 1">
-                    </a>
-                </figure>
-            </li>
-            <li>
-                <figure class="showcase-photo">
-                    <a href="resources/img/showcase2.jpg" target="_blank">
-                        <img src="resources/img/showcase2.jpg" alt="obraz 2">
-                    </a>
-                </figure>
-            </li>
-        </ul>
-        <ul class="showcase wide-2 clearfix">
-            <li>
-                <figure class="showcase-photo">
-                    <a href="resources/img/showcase3.jpg" target="_blank">
-                        <img src="resources/img/showcase3.jpg" alt="obraz 3">
-                    </a>
-                </figure>
-            </li>
-            <li>
-                <figure class="showcase-photo">
-                    <a href="resources/img/showcase4.jpg" target="_blank">
-                        <img src="resources/img/showcase4.jpg" alt="obraz 4">
-                    </a>
-                </figure>
-            </li>
-        </ul>
-        <ul class="showcase wide-2 clearfix">
-            <li>
-                <figure class="showcase-photo">
-                    <a href="resources/img/showcase5.jpg" target="_blank">
-                        <img src="resources/img/showcase5.jpg" alt="obraz 5">
-                    </a>
-                </figure>
-            </li>
-            <li>
-                <figure class="showcase-photo">
-                    <a href="resources/img/showcase6.jpg" target="_blank">
-                        <img src="resources/img/showcase6.jpg" alt="obraz 6">
-                    </a>
-                </figure>
-            </li>
-        </ul>
     </section>
 
     <section class="section-5" id="section-5">
         <div class="row about-wrap js--wp-3">
             <div class="about-media">
-                <img src="resources/img/logo.png" alt="Logo Warsaw Gun Works" class="about-logo">
+                <img src="resources/img/logo.webp" alt="Logo Warsaw Gun Works" class="about-logo">
             </div>
             <div class="about-card">
                 <p class="about-text">
@@ -309,6 +259,7 @@
             <p>© Copyright 2025. Wszelkie prawa zastrzeżone Warsaw Gun Works</p>
         </div>
     </footer>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="vendors/js/respond.min.js"></script>
     <script type="text/javascript" src="vendors/js/html5shiv.js"></script>
@@ -316,5 +267,4 @@
     <script type="text/javascript" src="vendors/js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="resources/js/script.js"></script>
 </body>
-
 </html>

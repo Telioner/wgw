@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <title>Modernizacje broni — Galeria | Warsaw Gun Works</title>
+
+  <style>
+    .page{min-height:100vh;display:flex;flex-direction:column}
+    .page-main{flex:1 0 auto;padding-top:90px}
+
+    nav.sticky-init{position:fixed;top:0;left:0;right:0;z-index:9999;background-color:rgba(255,255,255,.99);box-shadow:0 2px 2px #e6e6e6}
+    nav.sticky-init .row{display:flex;align-items:center;justify-content:space-between}
+    nav.sticky-init .logo{display:none}
+    nav.sticky-init .logo-black{display:block;height:36px}
+    nav.sticky-init .main-nav{margin:0}
+    nav.sticky-init .main-nav li{display:inline-block;margin-left:0}
+    nav.sticky-init .main-nav a{padding:16px 0;color:#4a4a4a}
+    nav.sticky-init .mobile-nav-icon{display:none !important}
+
+    .contact-top{padding:34px 0 10px;text-align:center}
+    .contact-list{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+    .contact-list a, .contact-list span{color:#374151;text-decoration:none}
+    .contact-list i{margin-right:6px;vertical-align:middle}
+
+    .mod-gallery{padding:18px 0 40px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1140px;margin:0 auto;padding:0 12px}
+    .tile{position:relative;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.12);background:#fff;cursor:pointer}
+    .tile::before{content:"";display:block;padding-top:66.6667%;}
+    .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+
+    @media (max-width: 900px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width: 560px){ .grid{grid-template-columns:1fr} }
+
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:10000;padding:20px}
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:96vw;max-height:90vh;border-radius:8px}
+    .lb-close{position:absolute;top:16px;right:20px;font-size:28px;color:#fff;cursor:pointer;line-height:1}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="sticky-init">
+      <div class="row">
+        <img src="../resources/img/logo-white.svg" alt="Warsaw Gun Works Logo" class="logo">
+        <img src="../resources/img/logo-black.svg" alt="Warsaw Gun Works Logo" class="logo-black">
+        <ul class="main-nav js--main-nav">
+          <li><a href="../index.html#section-3">Powrót</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <section class="contact-top">
+        <div class="row">
+          <h2>Modernizacje broni — galeria</h2>
+          <div class="contact-list">
+            <a href="mailto:wgw@warsawgunworks.pl"><i class="ion-email"></i>wgw@warsawgunworks.pl</a>
+            <a href="tel:+48608251451"><i class="ion-ios-telephone"></i>+48 608 251 451</a>
+            <span><i class="ion-ios-location"></i>Wał Kościuszkowski 13, 04-248 Warszawa</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mod-gallery">
+        <div class="grid" id="gallery">
+          <figure class="tile"><img src="../resources/img/showcase1.webp" alt="showcase 1"></figure>
+          <figure class="tile"><img src="../resources/img/showcase2.webp" alt="showcase 2"></figure>
+          <figure class="tile"><img src="../resources/img/showcase3.webp" alt="showcase 3"></figure>
+          <figure class="tile"><img src="../resources/img/showcase4.webp" alt="showcase 4"></figure>
+          <figure class="tile"><img src="../resources/img/showcase5.webp" alt="showcase 5"></figure>
+          <figure class="tile"><img src="../resources/img/showcase6.webp" alt="showcase 6"></figure>
+          <figure class="tile"><img src="../resources/img/showcase9.webp" alt="showcase 9"></figure>
+          <figure class="tile"><img src="../resources/img/mod1.webp" alt="Modernizacja 1"></figure>
+          <figure class="tile"><img src="../resources/img/mod2.webp" alt="Modernizacja 2"></figure>
+          <figure class="tile"><img src="../resources/img/mod3.webp" alt="Modernizacja 3"></figure>
+          <figure class="tile"><img src="../resources/img/mod4.webp" alt="Modernizacja 4"></figure>
+          <figure class="tile"><img src="../resources/img/mod5.webp" alt="Modernizacja 5"></figure>
+          <figure class="tile"><img src="../resources/img/mod6.webp" alt="Modernizacja 6"></figure>
+          <figure class="tile"><img src="../resources/img/mod7.webp" alt="Modernizacja 7"></figure>
+          <figure class="tile"><img src="../resources/img/mod8.webp" alt="Modernizacja 8"></figure>
+          <figure class="tile"><img src="../resources/img/mod9.webp" alt="Modernizacja 9"></figure>
+          <figure class="tile"><img src="../resources/img/mod10.webp" alt="Modernizacja 10"></figure>
+          <figure class="tile"><img src="../resources/img/mod11.webp" alt="Modernizacja 11"></figure>
+          <figure class="tile"><img src="../resources/img/mod12.webp" alt="Modernizacja 12"></figure>
+          <figure class="tile"><img src="../resources/img/mod13.webp" alt="Modernizacja 13"></figure>
+          <figure class="tile"><img src="../resources/img/mod14.webp" alt="Modernizacja 14"></figure>
+          <figure class="tile"><img src="../resources/img/mod15.webp" alt="Modernizacja 15"></figure>
+          <figure class="tile"><img src="../resources/img/mod16.webp" alt="Modernizacja 16"></figure>
+          <figure class="tile"><img src="../resources/img/mod17.webp" alt="Modernizacja 17"></figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="row">
+        <p>© Copyright 2025. Wszelkie prawa zastrzeżone Warsaw Gun Works</p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lb-close" id="lbClose">&times;</span>
+    <img src="" alt="podgląd" id="lbImg">
+  </div>
+
+  <script>
+    (function(){
+      var nav=document.querySelector('nav.sticky-init');
+      var main=document.querySelector('.page-main');
+      function setOffset(){if(nav&&main){main.style.paddingTop=nav.offsetHeight+'px';}}
+      window.addEventListener('load',setOffset);
+      window.addEventListener('resize',setOffset);
+
+      var lb=document.getElementById('lightbox');
+      var lbImg=document.getElementById('lbImg');
+      var lbClose=document.getElementById('lbClose');
+
+      document.getElementById('gallery').addEventListener('click',function(e){
+        var t=e.target;
+        if(t && t.tagName.toLowerCase()==='img'){
+          lbImg.src=t.src;
+          lb.classList.add('open');
+        }
+      });
+      function closeLB(){lb.classList.remove('open');lbImg.src='';}
+      lb.addEventListener('click',function(e){ if(e.target===lb) closeLB(); });
+      lbClose.addEventListener('click',closeLB);
+      document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeLB(); });
+    })();
+  </script>
+</body>
+</html>
