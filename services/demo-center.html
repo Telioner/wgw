@@ -37,7 +37,16 @@
     .rep-body ul{margin:6px 0 0 0;padding:0;list-style:none}
     .rep-body li{margin:6px 0}
     .rep-cta{margin-top:16px}
-    @media (min-width:900px){.rep-card-grid{grid-template-columns:1fr;gap:24px}}
+
+    /* KONTAKT – wyrównanie do lewej jak proszono */
+    .rep-meta{display:grid;grid-template-columns:1fr;gap:10px;padding:14px;background:#fbfcfe;border:1px solid #eef2f7;border-radius:12px;height:fit-content;text-align:left}
+    .rep-meta .meta-row{display:flex;align-items:flex-start;gap:10px;color:#1f2937;font-size:15px;line-height:1.6;justify-content:flex-start}
+    .rep-meta a{color:#0f62fe;text-decoration:none;word-break:break-word}
+    .rep-meta a:hover{text-decoration:underline}
+
+    @media (min-width:900px){
+      .rep-card-grid{grid-template-columns:3fr 1.5fr;gap:24px}
+    }
   </style>
 </head>
 <body>
@@ -87,13 +96,18 @@
                 <li>Odbierz dopasowaną ofertę.</li>
               </ul>
 
-              <p>„Najlepszym testem naszych produktów jest chwila, kiedy Ty z nich korzystasz.” – Mr
-              G</p>
+              <p>„Najlepszym testem naszych produktów jest chwila, kiedy Ty z nich korzystasz.” – Mr G</p>
 
               <div class="rep-cta">
                 <a class="btn btn-full" href="mailto:wgw@warsawgunworks.pl?subject=Demo%20Center">Umów wizytę w Demo Center</a>
               </div>
             </div>
+
+            <aside class="rep-meta" aria-label="Kontakt">
+              <div class="meta-row"><div><strong>E-mail:&nbsp;</strong><a href="mailto:wgw@warsawgunworks.pl">wgw@warsawgunworks.pl</a></div></div>
+              <div class="meta-row"><div><strong>Telefon:&nbsp;</strong><a href="tel:+48608251451">+48 608 251 451</a></div></div>
+              <div class="meta-row"><div><strong>Adres:&nbsp;</strong>Wał Kościuszkowski 13, 04-248 Warszawa</div></div>
+            </aside>
           </div>
         </div>
       </section>

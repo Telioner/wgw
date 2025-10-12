@@ -38,7 +38,16 @@
     .rep-body ul{margin:6px 0 0 0;padding:0;list-style:none}
     .rep-body li{margin:6px 0}
     .rep-cta{margin-top:16px}
-    @media (min-width:900px){.rep-card-grid{grid-template-columns:1fr;gap:24px}}
+
+    /* KONTAKT – wyrównanie do lewej jak proszono */
+    .rep-meta{display:grid;grid-template-columns:1fr;gap:10px;padding:14px;background:#fbfcfe;border:1px solid #eef2f7;border-radius:12px;height:fit-content;text-align:left}
+    .rep-meta .meta-row{display:flex;align-items:flex-start;gap:10px;color:#1f2937;font-size:15px;line-height:1.6;justify-content:flex-start}
+    .rep-meta a{color:#0f62fe;text-decoration:none;word-break:break-word}
+    .rep-meta a:hover{text-decoration:underline}
+
+    @media (min-width:900px){
+      .rep-card-grid{grid-template-columns:3fr 1.5fr;gap:24px}
+    }
   </style>
 </head>
 <body>
@@ -65,39 +74,45 @@
         </div>
       </section>
 
-      <section class="rep-about">
-        <div class="rep-card">
-          <div class="rep-card-grid">
-            <div class="rep-body">
-              <p>Sprzęt Spartan to dopiero początek.<br>
-              Na szkoleniu pokażemy Ci, jak w pełni wykorzystać jego możliwości – w terenie i na
-              strzelnicy.</p>
+    <section class="rep-about">
+      <div class="rep-card">
+        <div class="rep-card-grid">
+          <div class="rep-body">
+            <p>Sprzęt Spartan to dopiero początek.<br>
+            Na szkoleniu pokażemy Ci, jak w pełni wykorzystać jego możliwości – w terenie i na
+            strzelnicy.</p>
 
-              <h4>Dlaczego warto?</h4>
-              <ul>
-                <li>Poznasz wszystkie funkcje i triki sprzętu.</li>
-                <li>Unikniesz błędów w obsłudze i ustawieniu.</li>
-                <li>Ćwiczenia praktyczne w realnych warunkach.</li>
-                <li>Wsparcie ekspertów Spartan – twórców i użytkowników naszych produktów.</li>
-              </ul>
+            <h4>Dlaczego warto?</h4>
+            <ul>
+              <li>Poznasz wszystkie funkcje i triki sprzętu.</li>
+              <li>Unikniesz błędów w obsłudze i ustawieniu.</li>
+              <li>Ćwiczenia praktyczne w realnych warunkach.</li>
+              <li>Wsparcie ekspertów Spartan – twórców i użytkowników naszych produktów.</li>
+            </ul>
 
-              <h4>Format szkoleń</h4>
-              <ul>
-                <li>Indywidualne – dopasowane do Twojego stylu polowania czy strzelania.</li>
-                <li>Grupowe – dla kół łowieckich, klubów i drużyn sportowych.</li>
-                <li>Wyjazdowe – możliwość organizacji szkolenia w Twojej lokalizacji.</li>
-              </ul>
+            <h4>Format szkoleń</h4>
+            <ul>
+              <li>Indywidualne – dopasowane do Twojego stylu polowania czy strzelania.</li>
+              <li>Grupowe – dla kół łowieckich, klubów i drużyn sportowych.</li>
+              <li>Wyjazdowe – możliwość organizacji szkolenia w Twojej lokalizacji.</li>
+            </ul>
 
-              <p>Dołącz do grona profesjonalnych użytkowników Spartan<br>
-              „Kupując sprzęt premium, zasługujesz na premium doświadczenie.”</p>
+            <p>Dołącz do grona profesjonalnych użytkowników Spartan<br>
+            „Kupując sprzęt premium, zasługujesz na premium doświadczenie.”</p>
 
-              <div class="rep-cta">
-                <a class="btn btn-full" href="mailto:wgw@warsawgunworks.pl?subject=Zapis%20na%20szkolenie%20Spartan">Zapisz się na szkolenie</a>
-              </div>
+            <div class="rep-cta">
+              <a class="btn btn-full" href="mailto:wgw@warsawgunworks.pl?subject=Zapis%20na%20szkolenie%20Spartan">Zapisz się na szkolenie</a>
             </div>
           </div>
+
+          <aside class="rep-meta" aria-label="Kontakt">
+            <div class="meta-row"><div><strong>E-mail:&nbsp;</strong><a href="mailto:wgw@warsawgunworks.pl">wgw@warsawgunworks.pl</a></div></div>
+            <div class="meta-row"><div><strong>Telefon:&nbsp;</strong><a href="tel:+48608251451">+48 608 251 451</a></div></div>
+            <div class="meta-row"><div><strong>Adres:&nbsp;</strong>Wał Kościuszkowski 13, 04-248 Warszawa</div></div>
+          </aside>
         </div>
-      </section>
+      </div>
+    </section>
     </main>
 
     <footer>
