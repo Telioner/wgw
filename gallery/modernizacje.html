@@ -19,13 +19,13 @@
     .page-main{flex:1 0 auto;padding-top:90px}
 
     nav.sticky-init{position:fixed;top:0;left:0;right:0;z-index:9999;background-color:rgba(255,255,255,.99);box-shadow:0 2px 2px #e6e6e6}
-    nav.sticky-init .row{display:flex;align-items:center;justify-content:space-between}
+    nav.sticky-init .main-nav{margin-top:18px;display:block !important;float:right}
+    nav.sticky-init .main-nav li{display:inline-block !important;margin-left:20px}
+    nav.sticky-init .main-nav li a{padding:16px 0;color:#4a4a4a}
     nav.sticky-init .logo{display:none}
-    nav.sticky-init .logo-black{display:block;height:36px}
-    nav.sticky-init .main-nav{margin:0}
-    nav.sticky-init .main-nav li{display:inline-block;margin-left:0}
-    nav.sticky-init .main-nav a{padding:16px 0;color:#4a4a4a}
+    nav.sticky-init .logo-black{display:block}
     nav.sticky-init .mobile-nav-icon{display:none !important}
+    @media (max-width:767px){nav.sticky-init .main-nav li a{padding:12px 0 !important}}
 
     .contact-top{padding:34px 0 10px;text-align:center}
     .contact-list{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:8px}
@@ -54,7 +54,7 @@
         <img src="../resources/img/logo-white.svg" alt="Warsaw Gun Works Logo" class="logo">
         <img src="../resources/img/logo-black.svg" alt="Warsaw Gun Works Logo" class="logo-black">
         <ul class="main-nav js--main-nav">
-          <li><a href="../index.html#section-3">Powrót</a></li>
+          <li><a href="../index.html#section-2">Powrót</a></li>
         </ul>
       </div>
     </nav>
