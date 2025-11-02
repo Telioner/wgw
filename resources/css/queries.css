@@ -1,3 +1,4 @@
+
 /* big tablet to 1200px (1024 to 1200px) */
 @media only screen and (max-width: 1200px) {
     .header-text-box {
@@ -10,71 +11,8 @@
     }
 }
 
-/* Small tablet to big tablet (768 to 1023px) */
-@media only screen and (max-width: 1023px) {
-    body {
-        font-size: 18px;
-    }
-
-    section {
-        padding: 60px 0;
-    }
-
-    .paragraph-section-1 {
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    .steps-box {
-        margin-top: 10px;
-    }
-
-    .steps-box:last-child {
-        margin-top: 10px;
-    }
-
-    .works-step {
-        margin-bottom: 40px;
-        font-size: 90%;
-    }
-
-    .works-step:last-of-type {
-        margin-bottom: 60px;
-    }
-
-    .main-nav li {
-        display: inline-block;
-        margin-left: 20px;
-    }
-
-    .icon-small {
-        width: 20px;
-    }
-
-    .section-4-feature {
-        font-size: 90%;
-    }
-
-    .section-6-box {
-        width: 100%;
-        margin-left: 0%;
-
-    }
-
-    .footer-nav {
-        font-size: 75%;
-    }
-
-    .header-text-box h1 {
-        font-size: 100%;
-    }
-}
-
-/* small phones to small tablets (481 to 767px) */
-@media only screen and (max-width: 767px) {
-    body {
-        font-size: 16px;
-    }
+/* Small tablet to big tablet (768 to 1200px) */
+@media only screen and (max-width: 1200px) {
 
     section {
         padding: 30px 0;
