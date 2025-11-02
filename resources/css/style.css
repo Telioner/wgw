@@ -41,7 +41,7 @@ img {
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------- */
 .row {
-    max-width: 1500px;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
@@ -99,7 +99,7 @@ h2:after {
 
 /* ------ PARAGRAPHS ------ */
 .paragraph-section-1 {
-    width: 70%;
+    max-width: 80vw;
     margin-left: 15%;
     text-align: center;
 
@@ -209,7 +209,7 @@ header {
 
 .header-text-box {
     position: absolute;
-    width: 1140px;
+    max-width: 80vw;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -432,22 +432,22 @@ header {
 }
 
 .reps-grid {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0 2%;
-    max-width: 1140px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px; 
 }
 
 .rep-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
-    overflow: hidden;
-    text-align: center;
-    transition: transform .2s ease, box-shadow .2s ease;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+  overflow: hidden;
+  text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+  padding: 20px;
 }
 
 .rep-card a {
@@ -457,8 +457,8 @@ header {
 }
 
 .rep-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .2);
 }
 
 .rep-logo-wrap {
@@ -471,10 +471,9 @@ header {
 }
 
 .rep-logo-wrap img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-    filter: brightness(0.95) contrast(1.05);
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
 }
 
 /* Tytuł karty */
