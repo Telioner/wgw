@@ -14,7 +14,7 @@ body {
     color: #4a4a4a;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 25px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
@@ -41,7 +41,7 @@ img {
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------- */
 .row {
-    max-width: 1140px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -99,7 +99,6 @@ h2:after {
 
 /* ------ PARAGRAPHS ------ */
 .paragraph-section-1 {
-    line-height: 145%;
     width: 70%;
     margin-left: 15%;
     text-align: center;
@@ -108,7 +107,6 @@ h2:after {
 
 .box p {
     font-size: 90%;
-    line-height: 145%;
     text-align: justify;
 }
 
@@ -127,7 +125,6 @@ h2:after {
     text-align: center;
     color: #3498db;
     font-size: 120%;
-    line-height: 120%;
     vertical-align: middle;
     margin-top: -4px;
     margin-right: 5px;
@@ -244,7 +241,6 @@ header {
     letter-spacing: 0;
     word-spacing: normal;
 
-    font-size: clamp(18px, 3.6vw, 30px);
     line-height: 1.4;
     max-width: 38ch;
     margin: 0 auto 24px;
@@ -609,7 +605,7 @@ header {
 }
 
 .about-text {
-    line-height: 1.75;
+    line-height: 1.4;
     margin-bottom: 18px;
     color: #eef3f7;
 }
