@@ -215,6 +215,7 @@ header {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: clamp(12px, .8vw, 20px);
 }
 
 .logo {
@@ -432,7 +433,7 @@ header {
 }
 
 .reps-grid {
-  max-width: 90vw;
+  max-width: 180vw;
   margin: 0 auto;
   padding: 0 2%;
   display: grid;
@@ -598,7 +599,6 @@ header {
     padding: 26px;
     box-shadow: 0 12px 36px rgba(0, 0, 0, .28);
     max-width: 560px;
-    margin: 0 auto;
     margin-top: 5%;
     justify-self: center; 
 }
