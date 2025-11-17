@@ -86,8 +86,15 @@ $(document).ready(function () {
     $('.js--nav-icon').click(function () {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
+        var header = $('header');
 
-        nav.slideToggle(200);
+        nav.slideToggle(200, function () {
+            if (nav.is(':visible')) {
+                header.addClass('menu-open');
+            } else {
+                header.removeClass('menu-open');
+            }
+        });
 
         if (icon.hasClass('ion-navicon-round')) {
             icon.addClass('ion-close-round');

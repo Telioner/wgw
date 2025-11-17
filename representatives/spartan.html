@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="WGW" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
@@ -10,72 +18,309 @@
   <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
   <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
   <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200;0,300;0,400;1,300&display=swap"
+    rel="stylesheet">
 
   <title>Spartan Precision Equipment — Warsaw Gun Works</title>
 
   <style>
-    .page{min-height:100vh;display:flex;flex-direction:column}
-    .page-main{flex:1 0 auto;padding-top:90px}
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column
+    }
 
-    nav.sticky-init{position:fixed;top:0;left:0;right:0;z-index:9999;background-color:rgba(255,255,255,.99);box-shadow:0 2px 2px #e6e6e6}
-    nav.sticky-init .main-nav{margin-top:18px;display:block !important;float:right}
-    nav.sticky-init .main-nav li{display:inline-block !important;margin-left:20px}
-    nav.sticky-init .main-nav li a{padding:16px 0;color:#4a4a4a}
-    nav.sticky-init .logo{display:none}
-    nav.sticky-init .logo-black{display:block}
-    nav.sticky-init .mobile-nav-icon{display:none !important}
-    nav.sticky-init .mobile-nav-icon i{color:#4a4a4a}
-    @media (max-width:767px){nav.sticky-init .main-nav li a{padding:12px 0 !important}}
+    .page-main {
+      flex: 1 0 auto;
+      padding-top: 90px
+    }
 
-    .rep-hero{padding:36px 0 10px;text-align:center}
-    .rep-hero h2{margin-bottom:8px}
-    .rep-hero p{opacity:.8;margin:0}
-    .rep-text{max-width:900px;margin:24px auto 0}
-    .rep-text p{line-height:1.4;margin-bottom:18px}
-    .rep-cta{margin-top:3%}
+    nav.sticky-init {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background-color: rgba(255, 255, 255, .99);
+      box-shadow: 0 2px 2px #e6e6e6
+    }
 
-    .rep-about{padding:28px 0 8px}
-    .rep-card{--radius:16px;--shadow:0 6px 24px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.06);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);max-width:1140px;margin:0 auto;padding:clamp(18px,2.5vw,28px);overflow:hidden}
-    .rep-card-grid{display:grid;grid-template-columns:1fr;gap:18px}
-    .rep-card h3{font-weight:400;letter-spacing:.2px;margin:0 0 6px;color:#111;}
-    .rep-lead{margin:0 0 12px;color:#374151;opacity:.9;line-height:1.4;}
-    .rep-body{color:#374151;line-height:1.4;}
-    .rep-quote{margin:10px 0 0;padding:12px 16px;border-left:4px solid #e6ecf5;background:#fbfcfe;border-radius:8px}
-    .rep-meta{display:grid;grid-template-columns:1fr;gap:10px;padding:14px;background:#fbfcfe;border:1px solid #eef2f7;border-radius:12px;height:fit-content}
-    .rep-meta .meta-row{display:flex;align-items:flex-start;gap:10px;color:#1f2937;font-size:15px;line-height:1.4}
-    .rep-meta a{color:#0f62fe;text-decoration:none;word-break:break-word}
-    .rep-meta a:hover{text-decoration:underline}
-    @media (min-width:900px){.rep-card-grid{grid-template-columns:3fr 1.5fr;gap:24px}}
+    nav.sticky-init .main-nav {
+      margin-top: 18px;
+      display: block !important;
+      float: right
+    }
 
-    .rep-gallery .showcase{list-style:none;margin:0;padding:0;display:grid;row-gap:18px;justify-items:center}
-    .rep-gallery .showcase li{width:100%;float:none;display:block}
-    .rep-gallery .showcase-photo{display:block;margin:0 auto;width:100%;max-width:var(--media-max,100%);border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.12)}
-    .rep-gallery .showcase-photo img{display:block;width:100%;height:auto;object-fit:contain;transform:none !important;opacity:1 !important;transition:none !important}
-    .rep-gallery .showcase-photo img:hover{transform:none !important;opacity:1 !important}
+    nav.sticky-init .main-nav li {
+      display: inline-block !important;
+      margin-left: 20px
+    }
 
-    .media-full{--media-max:100%}
-    .media-100{--media-max:min(1140px,100%)}
-    .media-90{--media-max:min(1026px,100%)}
-    .media-85{--media-max:min(969px,100%)}
-    .media-80{--media-max:min(912px,100%)}
-    .media-75{--media-max:min(855px,100%)}
-    .media-70{--media-max:min(798px,100%)}
-    .media-66{--media-max:min(752px,100%)}
-    .media-60{--media-max:min(684px,100%)}
-    .media-55{--media-max:min(627px,100%)}
-    .media-50{--media-max:min(570px,100%)}
-    .media-45{--media-max:min(513px,100%)}
-    .media-40{--media-max:min(456px,100%)}
-    .media-35{--media-max:min(399px,100%)}
-    .media-33{--media-max:min(376px,100%)}
-    .media-30{--media-max:min(342px,100%)}
-    .media-25{--media-max:min(285px,100%)}
-    .media-20{--media-max:min(228px,100%)}
-    .media-15{--media-max:min(171px,100%)}
-    @media (max-width:1140px){.rep-gallery .showcase-photo{max-width:min(var(--media-max),100%)}}
+    nav.sticky-init .main-nav li a {
+      padding: 16px 0;
+      color: #4a4a4a
+    }
+
+    nav.sticky-init .logo {
+      display: none
+    }
+
+    nav.sticky-init .logo-black {
+      display: block
+    }
+
+    nav.sticky-init .mobile-nav-icon {
+      display: none !important
+    }
+
+    nav.sticky-init .mobile-nav-icon i {
+      color: #4a4a4a
+    }
+
+    @media (max-width:767px) {
+      nav.sticky-init .main-nav li a {
+        padding: 12px 0 !important
+      }
+    }
+
+    .rep-hero {
+      padding: 36px 0 10px;
+      text-align: center
+    }
+
+    .rep-hero h2 {
+      margin-bottom: 8px
+    }
+
+    .rep-hero p {
+      opacity: .8;
+      margin: 0
+    }
+
+    .rep-text {
+      max-width: 900px;
+      margin: 24px auto 0
+    }
+
+    .rep-text p {
+      line-height: 1.4;
+      margin-bottom: 18px
+    }
+
+    .rep-cta {
+      margin-top: 3%
+    }
+
+    .rep-about {
+      padding: 28px 0 8px
+    }
+
+    .rep-card {
+      --radius: 16px;
+      --shadow: 0 6px 24px rgba(0, 0, 0, .08), 0 2px 8px rgba(0, 0, 0, .06);
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: clamp(18px, 2.5vw, 28px);
+      overflow: hidden
+    }
+
+    .rep-card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px
+    }
+
+    .rep-card h3 {
+      font-weight: 400;
+      letter-spacing: .2px;
+      margin: 0 0 6px;
+      color: #111;
+    }
+
+    .rep-lead {
+      margin: 0 0 12px;
+      color: #374151;
+      opacity: .9;
+      line-height: 1.4;
+    }
+
+    .rep-body {
+      color: #374151;
+      line-height: 1.4;
+    }
+
+    .rep-quote {
+      margin: 10px 0 0;
+      padding: 12px 16px;
+      border-left: 4px solid #e6ecf5;
+      background: #fbfcfe;
+      border-radius: 8px
+    }
+
+    .rep-meta {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 14px;
+      background: #fbfcfe;
+      border: 1px solid #eef2f7;
+      border-radius: 12px;
+      height: fit-content
+    }
+
+    .rep-meta .meta-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #1f2937;
+      font-size: 15px;
+      line-height: 1.4
+    }
+
+    .rep-meta a {
+      color: #0f62fe;
+      text-decoration: none;
+      word-break: break-word
+    }
+
+    .rep-meta a:hover {
+      text-decoration: underline
+    }
+
+    @media (min-width:900px) {
+      .rep-card-grid {
+        grid-template-columns: 3fr 1.5fr;
+        gap: 24px
+      }
+    }
+
+    .rep-gallery .showcase {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      row-gap: 18px;
+      justify-items: center
+    }
+
+    .rep-gallery .showcase li {
+      width: 100%;
+      float: none;
+      display: block
+    }
+
+    .rep-gallery .showcase-photo {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: var(--media-max, 100%);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .12)
+    }
+
+    .rep-gallery .showcase-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      transform: none !important;
+      opacity: 1 !important;
+      transition: none !important
+    }
+
+    .rep-gallery .showcase-photo img:hover {
+      transform: none !important;
+      opacity: 1 !important
+    }
+
+    .media-full {
+      --media-max: 100%
+    }
+
+    .media-100 {
+      --media-max: min(1140px, 100%)
+    }
+
+    .media-90 {
+      --media-max: min(1026px, 100%)
+    }
+
+    .media-85 {
+      --media-max: min(969px, 100%)
+    }
+
+    .media-80 {
+      --media-max: min(912px, 100%)
+    }
+
+    .media-75 {
+      --media-max: min(855px, 100%)
+    }
+
+    .media-70 {
+      --media-max: min(798px, 100%)
+    }
+
+    .media-66 {
+      --media-max: min(752px, 100%)
+    }
+
+    .media-60 {
+      --media-max: min(684px, 100%)
+    }
+
+    .media-55 {
+      --media-max: min(627px, 100%)
+    }
+
+    .media-50 {
+      --media-max: min(570px, 100%)
+    }
+
+    .media-45 {
+      --media-max: min(513px, 100%)
+    }
+
+    .media-40 {
+      --media-max: min(456px, 100%)
+    }
+
+    .media-35 {
+      --media-max: min(399px, 100%)
+    }
+
+    .media-33 {
+      --media-max: min(376px, 100%)
+    }
+
+    .media-30 {
+      --media-max: min(342px, 100%)
+    }
+
+    .media-25 {
+      --media-max: min(285px, 100%)
+    }
+
+    .media-20 {
+      --media-max: min(228px, 100%)
+    }
+
+    .media-15 {
+      --media-max: min(171px, 100%)
+    }
+
+    @media (max-width:1140px) {
+      .rep-gallery .showcase-photo {
+        max-width: min(var(--media-max), 100%)
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="page">
     <nav class="sticky-init">
@@ -103,11 +348,19 @@
               <p class="rep-lead">Rifle &amp; Optic Support Systems – Lżejsze, a potrafią więcej</p>
 
               <div class="rep-body">
-                <p>Spartan Precision Equipment Ltd to brytyjski producent innowacyjnych systemów wsparcia dla broni i optyki, cenionych przez myśliwych oraz strzelców sportowych na całym świecie. Od 2013 roku tworzymy rozwiązania, które łączą precyzję, niezawodność i ultralekką konstrukcję.</p>
-                <p>Hunting to nasza pasja i DNA całego zespołu. Dlatego wiemy, jak wymagające potrafią być warunki w terenie – nasze produkty projektujemy i testujemy z myślą o prawdziwych wyzwaniach, tak aby nigdy nie zawiodły w kluczowych momentach.</p>
-                <p>Produkcja i finalny montaż w Wielkiej Brytanii. Siedziba Spartan Precision Equipment mieści się w południowej Anglii. Jesteśmy zgraną, przyjazną ekipą, dla której Spartan to coś więcej niż praca – to styl życia. Tworzymy produkty, których sami używamy i z dumą wprowadzamy je do rąk myśliwych i strzelców na całym świecie.</p>
+                <p>Spartan Precision Equipment Ltd to brytyjski producent innowacyjnych systemów wsparcia dla broni i
+                  optyki, cenionych przez myśliwych oraz strzelców sportowych na całym świecie. Od 2013 roku tworzymy
+                  rozwiązania, które łączą precyzję, niezawodność i ultralekką konstrukcję.</p>
+                <p>Hunting to nasza pasja i DNA całego zespołu. Dlatego wiemy, jak wymagające potrafią być warunki w
+                  terenie – nasze produkty projektujemy i testujemy z myślą o prawdziwych wyzwaniach, tak aby nigdy nie
+                  zawiodły w kluczowych momentach.</p>
+                <p>Produkcja i finalny montaż w Wielkiej Brytanii. Siedziba Spartan Precision Equipment mieści się w
+                  południowej Anglii. Jesteśmy zgraną, przyjazną ekipą, dla której Spartan to coś więcej niż praca – to
+                  styl życia. Tworzymy produkty, których sami używamy i z dumą wprowadzamy je do rąk myśliwych i
+                  strzelców na całym świecie.</p>
                 <div class="rep-quote">
-                  <em>„Dostarczanie rozwiązań myśliwym daje ogromną satysfakcję – szczególnie wtedy, gdy robimy to dobrze.”</em><br>
+                  <em>„Dostarczanie rozwiązań myśliwym daje ogromną satysfakcję – szczególnie wtedy, gdy robimy to
+                    dobrze.”</em><br>
                   — Mr G, założyciel Spartan Precision Equipment
                 </div>
 
@@ -128,39 +381,40 @@
                 <div><strong>Lokalizacja:&nbsp;</strong>South of England, United Kingdom</div>
               </div>
               <div class="meta-row">
-                  <a href="https://www.javelinbipod.com" target="_blank" rel="noopener">www.javelinbipod.com</a>
-                </div>
+                <a href="https://www.javelinbipod.com" target="_blank" rel="noopener">www.javelinbipod.com</a>
               </div>
-            </aside>
           </div>
+          </aside>
         </div>
-      </section>
+  </div>
+  </section>
 
-      <section class="rep-gallery">
-        <ul class="showcase">
-          <li class="media-50">
-            <figure class="showcase-photo">
-              <img src="../resources/img/przedstawiciel-spartan.webp" alt="Spartan Precision Equipment — zdjęcie 1">
-            </figure>
-          </li>
-          <li class="media-full">
-            <figure class="showcase-photo">
-              <img src="../resources/img/SpringBokTripodWEB.webp" alt="Spartan Precision Equipment — zdjęcie 2">
-            </figure>
-          </li>
-        </ul>
-      </section>
-    </main>
+  <section class="rep-gallery">
+    <ul class="showcase">
+      <li class="media-50">
+        <figure class="showcase-photo">
+          <img src="../resources/img/przedstawiciel-spartan.webp" alt="Spartan Precision Equipment — zdjęcie 1">
+        </figure>
+      </li>
+      <li class="media-full">
+        <figure class="showcase-photo">
+          <img src="../resources/img/SpringBokTripodWEB.webp" alt="Spartan Precision Equipment — zdjęcie 2">
+        </figure>
+      </li>
+    </ul>
+  </section>
+  </main>
 
-    <footer>
-      <div class="row">
-        <p>© Copyright 2025. Wszelkie prawa zastrzeżone Warsaw Gun Works</p>
-      </div>
-    </footer>
+  <footer>
+    <div class="row">
+      <p>© Copyright 2025. Wszelkie prawa zastrzeżone Warsaw Gun Works</p>
+    </div>
+  </footer>
   </div>
 
   <script>
-    (function(){var nav=document.querySelector('nav.sticky-init');var main=document.querySelector('.page-main');function setOffset(){if(nav&&main){main.style.paddingTop=nav.offsetHeight+'px';}}window.addEventListener('load',setOffset);window.addEventListener('resize',setOffset);})();
+    (function () { var nav = document.querySelector('nav.sticky-init'); var main = document.querySelector('.page-main'); function setOffset() { if (nav && main) { main.style.paddingTop = nav.offsetHeight + 'px'; } } window.addEventListener('load', setOffset); window.addEventListener('resize', setOffset); })();
   </script>
 </body>
+
 </html>

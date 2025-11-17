@@ -189,3 +189,24 @@
     margin-top: 14px;
   }
 }
+
+@media (max-width: 768px) {
+  nav.sticky-init .main-nav {
+    position: static !important;
+    background: none !important;
+    display: block !important;
+    width: auto !important;
+    padding: 0 !important;
+    text-align: right !important;
+  }
+
+  nav.sticky-init .main-nav li {
+    display: inline-block !important;
+    margin: 0 0 0 16px !important;
+  }
+
+  nav.sticky-init .main-nav li a {
+    font-size: 18px !important;
+    color: #333 !important;
+  }
+}
